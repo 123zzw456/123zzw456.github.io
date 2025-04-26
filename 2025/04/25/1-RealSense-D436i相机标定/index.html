@@ -19,12 +19,12 @@
   <meta name="author" content="sunny">
   <meta name="keywords" content="">
   
-    <meta name="description" content="&#x2F;* 仅当前文章生效的背景样式 *&#x2F;   .post-content {     background-image: url(&#39;&#x2F;images&#x2F;004.jpg&#39;);     background-size: 100% auto; &#x2F;* 宽度 100% 自适应 *&#x2F;     padding: 20px; &#x2F;* 若背景图片遮挡内容，添加内边距 *&#x2F;   }   一．相机标定  相机成像原理相机成">
+    <meta name="description" content="一．相机标定  相机成像原理相机成像过程相机数学模型相机标定方法   1.1 相机成像原理&emsp;&emsp;相机成像原理与小孔成像原理（用一个带有小孔的板遮挡在墙体与物体之间，墙体上就会形成物体的倒影）类似，孔越大，成像越模糊。后来人们又想到了使用凸透镜将光聚集，于是才开始探索利用凸透镜进行成像的原理，这为相机发展奠定了基础。           图1 小孔成像    &emsp;&amp;emsp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1. RealSense D435i相机标定">
 <meta property="og:url" content="https://123zzw456.github.io/2025/04/25/1-RealSense-D436i%E7%9B%B8%E6%9C%BA%E6%A0%87%E5%AE%9A/index.html">
 <meta property="og:site_name" content="Sunny&#39;s Blog">
-<meta property="og:description" content="&#x2F;* 仅当前文章生效的背景样式 *&#x2F;   .post-content {     background-image: url(&#39;&#x2F;images&#x2F;004.jpg&#39;);     background-size: 100% auto; &#x2F;* 宽度 100% 自适应 *&#x2F;     padding: 20px; &#x2F;* 若背景图片遮挡内容，添加内边距 *&#x2F;   }   一．相机标定  相机成像原理相机成">
+<meta property="og:description" content="一．相机标定  相机成像原理相机成像过程相机数学模型相机标定方法   1.1 相机成像原理&emsp;&emsp;相机成像原理与小孔成像原理（用一个带有小孔的板遮挡在墙体与物体之间，墙体上就会形成物体的倒影）类似，孔越大，成像越模糊。后来人们又想到了使用凸透镜将光聚集，于是才开始探索利用凸透镜进行成像的原理，这为相机发展奠定了基础。           图1 小孔成像    &emsp;&amp;emsp">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://123zzw456.github.io/images/image-1.png">
 <meta property="og:image" content="https://123zzw456.github.io/images/image-2.png">
@@ -45,7 +45,7 @@
 <meta property="og:image" content="https://123zzw456.github.io/images/image-16.png">
 <meta property="og:image" content="https://123zzw456.github.io/images/image-17.png">
 <meta property="article:published_time" content="2025-04-25T12:04:04.000Z">
-<meta property="article:modified_time" content="2025-04-26T08:13:30.428Z">
+<meta property="article:modified_time" content="2025-04-26T08:14:18.176Z">
 <meta property="article:author" content="sunny">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://123zzw456.github.io/images/image-1.png">
@@ -244,7 +244,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.9k 字
+          4.8k 字
         
       </span>
     
@@ -297,16 +297,7 @@
             
               <div class="markdown-body">
                 
-                <style>
-  /* 仅当前文章生效的背景样式 */
-  .post-content {
-    background-image: url('/images/004.jpg');
-    background-size: 100% auto; /* 宽度 100% 自适应 */
-    padding: 20px; /* 若背景图片遮挡内容，添加内边距 */
-  }
-</style>
-
-<h1 id="一．相机标定"><a href="#一．相机标定" class="headerlink" title="一．相机标定"></a>一．相机标定</h1><hr>
+                <h1 id="一．相机标定"><a href="#一．相机标定" class="headerlink" title="一．相机标定"></a>一．相机标定</h1><hr>
 <blockquote>
 <p><em><strong>相机成像原理</strong></em><br><em><strong>相机成像过程</strong></em><br><em><strong>相机数学模型</strong></em><br><em><strong>相机标定方法</strong></em></p>
 </blockquote>
